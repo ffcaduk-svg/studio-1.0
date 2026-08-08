@@ -4,6 +4,7 @@ import { GoogleGenAI } from "@google/genai";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
+
     const message =
       typeof body.message === "string" ? body.message.trim() : "";
 
